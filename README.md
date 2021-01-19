@@ -1,6 +1,17 @@
 # Sermões de John Wesley
+O projeto Sermões de John Wesley é uma iniciativa independente, open source e sem fins lucrativos cujo objetivo é disponibilizar de forma fácil, simples e intuitiva todos os sermões pregados por Wesley.
 
-# Enviar sermões
+John Wesley editou os sermões em dois momentos: logo depois do início da fase mais evangelista e da formação do movimento metodista, e mais tarde, a partir de 1778, no Arminian Magazine, revista editada por ele até o ano da sua morte, em 1791. As reflexões a respeito de Wesley e sua linha teológica tem sido motivo de várias pesquisas no país e no mundo. [Igreja Metodista - Portal Nacional](https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download)
+
+# Fontes de referência
+
+- [Igreja Metodista - Portal Nacional](https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download)
+- [Centro de Estudos Wesleyanos](http://portal.metodista.br/cew/)
+
+# Como contribuir
+Apoie o desenvolvimento do projeto implementando e corrigindo o código (confira as issues abertas) e/ou cadastrando sermões ausentes e adicionando sermões em outros idiomas.
+
+## Como cadastrar novos sermões
 Para cadastrar novos sermões de John Wesley copie o arquivo `sermon_exemple.json` presente na pasta `/data` e renomeie de acordo com o número do sermão. Por exemplo, se o sermão cadastrado for o de número 50 renomeie o arquivo como `sermon_50.json`.
 
 O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
@@ -23,19 +34,27 @@ O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
 }
 ```
 
-**Campos**
+**Campos/Informações**
 
-`title`: Título do sermão.
-`date`: Data de quando o sermão foi pregado, utilize a seguinte estrutura de data.
+`title`: Título do sermão. Campo obrigatório.
+
+`date`: Data de quando o sermão foi pregado, utilize a seguinte estrutura de data. Campo obrigatório.
+
 `location`: Local onde o sermão foi pregado, não é um campo obrigatório, caso não tenha informações sobre a localização, deixe em branco.
-`number`: Número do sermão.
-`language`: Não se refere ao idioma em que o sermão foi pregado, mas ao idioma em que o texto foi escrito.
-`verse`: Texto base do sermão.
-`outline`: Esboço do sermão. Preencha utilizando uma estrutura HTML.
-`content`: .... Preencha utilizando uma estrutura HTML.
-`reference`: Referência de onde o texto foi retirado.
 
-**Suporte à outros idiomas**
+`number`: Número do sermão. Campo obrigatório.
+
+`language`: Não se refere ao idioma em que o sermão foi pregado, mas ao idioma em que o texto foi escrito. Campo obrigatório.
+
+`verse`: Texto base do sermão. Campo obrigatório.
+
+`outline`: Esboço do sermão. Campo obrigatório. Preencha utilizando uma estrutura HTML. Por exemplo: `outline:{<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet arcu ac sem pretium semper vel nec sapien.</p><p>Donec tincidunt vulputate erat, eget condimentum elit tempor suscipit. Suspendisse sed sapien velit. <p>Aliquam vitae ullamcorper sapien, consequat ultrices nisl. Integer auctor ex at finibus tincidunt./p><p>Nullam id urna vulputate, vestibulum ex a, iaculis leo. Phasellus pretium lacus nec orci fringilla facilisis.</p>}` 
+
+`content`: Conteúdo do sermão. Campo obrigatório. Preencha utilizando uma estrutura HTML.
+
+`reference`: Referência de onde o texto foi retirado. Campo obrigatório.
+
+**Suporte a outros idiomas**
 
 Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique o objeto dentro do array `sermon` e preencha com os valores referentes ao idioma a ser adicionada. Por exemplo:
 
@@ -76,3 +95,6 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
 ```
 
 **Atenção:** este recurso se destina exclusivamente para uso de múltiplos idiomas e não para multiplas traduções/versões. No momento o projeto não oferece suporte à versões em uma mesma língua.
+
+## Como rodar o projeto
+Instale as dependências utilizando `yarn`.
