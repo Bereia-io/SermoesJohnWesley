@@ -6,6 +6,7 @@ Para cadastrar novos sermões de John Wesley copie o arquivo `sermon_exemple.jso
 O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
 
 ˋˋˋ
+
 {
     "title":"Título do Sermão",
     "date":"Data do sermão",
@@ -21,6 +22,7 @@ O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
     ],
     "reference":""
 }
+
 ˋˋˋ
 
 **Campos**
@@ -40,6 +42,7 @@ O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
 Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique o objeto dentro do array `sermon` e preencha com os valores referentes ao idioma a ser adicionada. Por exemplo:
 
 ˋˋˋ
+
 {
     ...
 
@@ -61,11 +64,13 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
     ],
     
 }
+
 ˋˋˋ
 
 É possível cadastrar mais de um idioma com dialetos diferentes. Por exemplo, um mesmo sermão pode ser cadastrado em português de Portugal e em portugês do Brasil da seguinte maneira:
 
 ˋˋˋ
+
 {
     ...
 
@@ -82,4 +87,5 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
     
 }
 
+ˋˋˋ
 **Atenção:** este recurso se destina exclusivamente para uso de múltiplos idiomas e não para multiplas traduções/versões. No momento o projeto não oferece suporte à versões em uma mesma língua.
