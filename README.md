@@ -48,7 +48,13 @@ O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
 
 `verse`: Texto base do sermão. Campo obrigatório.
 
-`outline`: Esboço do sermão. Campo obrigatório. Preencha utilizando uma estrutura HTML. Por exemplo: `outline:{<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet arcu ac sem pretium semper vel nec sapien.</p><p>Donec tincidunt vulputate erat, eget condimentum elit tempor suscipit. Suspendisse sed sapien velit. <p>Aliquam vitae ullamcorper sapien, consequat ultrices nisl. Integer auctor ex at finibus tincidunt./p><p>Nullam id urna vulputate, vestibulum ex a, iaculis leo. Phasellus pretium lacus nec orci fringilla facilisis.</p>}` 
+`outline`: Esboço do sermão. Campo obrigatório. Preencha utilizando uma estrutura HTML. Por exemplo: 
+
+```json
+{
+    "outline":{"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet arcu ac sem pretium semper vel nec sapien.</p><p>Donec tincidunt vulputate erat, eget condimentum elit tempor suscipit. Suspendisse sed sapien velit. <p>Aliquam vitae ullamcorper sapien, consequat ultrices nisl. Integer auctor ex at finibus tincidunt./p><p>Nullam id urna vulputate, vestibulum ex a, iaculis leo. Phasellus pretium lacus nec orci fringilla facilisis.</p>"}
+}
+```
 
 `content`: Conteúdo do sermão. Campo obrigatório. Preencha utilizando uma estrutura HTML.
 
