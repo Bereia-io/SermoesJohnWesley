@@ -4,8 +4,8 @@
         "title":{":type": "line"},
         "date":{":type": "line"},
         "location":{":type": "line"},
-        "content": [
-            {
+        "content": {
+            ":items": {
                 "language":{":type": "line"},
                 "number":{":type": "line"},
                 "verse":{":type": "text", ":richtext": true},
@@ -13,6 +13,6 @@
                 "body":{":type": "text", ":richtext": true},
                 "reference":{":type": "line"}
             }
-        ]
+        }
     }
 }
