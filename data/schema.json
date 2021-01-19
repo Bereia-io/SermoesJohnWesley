@@ -24,28 +24,28 @@
     ],
     "required": [
         "title",
-        "data",
+        "date",
         "sermon"
     ],
     "properties": {
         "title": {
             "$id": "#/properties/title",
             "type": "string",
-            "title": "The title schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Título do Sermão",
+            "description": "Título do sermão pregado por Wesley",
             "default": "",
             "examples": [
-                "Título do sermão"
+                "A salvação pela fé"
             ]
         },
-        "data": {
-            "$id": "#/properties/data",
+        "date": {
+            "$id": "#/properties/date",
             "type": "string",
-            "title": "The data schema",
-            "description": "An explanation about the purpose of this instance.",
+            "title": "Data do Sermão",
+            "description": "Data em que o sermão foi pregado",
             "default": "",
             "examples": [
-                "Data do sermão"
+                "11 de junho de 1738"
             ]
         },
         "location": {
@@ -55,7 +55,7 @@
             "description": "Onde o sermão foi pregado",
             "default": "",
             "examples": [
-                "Onde foi pregado"
+                "Universidade de Oxford"
             ]
         },
         "sermon": {
