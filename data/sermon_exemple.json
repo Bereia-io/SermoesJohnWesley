@@ -1,18 +1,16 @@
 {
+    ":name":"",
     "sermon":{
-        "title":"Título do Sermão",
-        "date":"Data do sermão",
-        "location":"Onde foi pregado",
-        "content":[
-            {
-            "language":"pt-BR",
-            "number":"Número do sermão",
-            "verse":"Versículo base",
-            "outline": "Esboço do sermão",
-            "body": "Conteúdo do sermão",
-            "reference":""
-            }
-
-        ]
+        "title":{":type": "line"},
+        "date":{":type": "line"},
+        "location":{":type": "line"},
+        "content": {
+            "language":{":type": "line"},
+            "number":{":type": "line"},
+            "verse":{":type": "text", ":richtext": true},
+            "outline":{":type": "text", ":richtext": true},
+            "body":{":type": "text", ":richtext": true},
+            "reference":{":type": "line"}
+        }
     }
 }
