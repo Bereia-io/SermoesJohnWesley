@@ -1,17 +1,19 @@
 {
     ":name":"Sermões John Wesley",
     "sermon":{
-        "title":{":type": "line"},
-        "date":{":type": "line"},
-        "location":{":type": "line"},
-        "content": {
-            ":items": {
-                "language":{":type": "line"},
-                "number":{":type": "line"},
-                "verse":{":type": "text", ":richtext": true},
-                "outline":{":type": "text", ":richtext": true},
-                "body":{":type": "text", ":richtext": true},
-                "reference":{":type": "line"}
+        ":item": {
+            "title":{":type": "line"},
+            "date":{":type": "line"},
+            "location":{":type": "line"},
+            "content": {
+                ":items": {
+                    "language":{":type": "line"},
+                    "number":{":type": "line"},
+                    "verse":{":type": "text", ":richtext": true},
+                    "outline":{":type": "text", ":richtext": true},
+                    "body":{":type": "text", ":richtext": true},
+                    "reference":{":type": "line"}
+                }
             }
         }
     }
