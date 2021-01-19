@@ -1,15 +1,17 @@
-{
-    "title":"Título do Sermão",
-    "date":"Data do sermão",
-    "location":"Onde foi pregado",
-    "sermon": [
-        {
-        "language":"pt-BR",
-        "number":"Número do sermão",
-        "verse":"Versículo base",
-        "outline": "Esboço do sermão",
-        "content": "Conteúdo do sermão",
-        "reference":""
-        }
-    ]
-}
+[
+    {
+        "title":"Título do Sermão",
+        "date":"Data do sermão",
+        "location":"Onde foi pregado",
+        "sermon": [
+            {
+            "language":"pt-BR",
+            "number":"Número do sermão",
+            "verse":"Versículo base",
+            "outline": "Esboço do sermão",
+            "content": "Conteúdo do sermão",
+            "reference":""
+            }
+        ]
+    }
+]

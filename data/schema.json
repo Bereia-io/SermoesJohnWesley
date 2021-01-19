@@ -1,182 +1,209 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://example.com/example.json",
-    "type": "object",
+    "type": "array",
     "title": "The root schema",
     "description": "The root schema comprises the entire JSON document.",
-    "default": {},
+    "default": [],
     "examples": [
-        {
-            "title": "Título do sermão",
-            "data": "Data do sermão",
-            "location": "Onde foi pregado",
-            "sermon": [
-                {
-                    "language": "pt-BR",
-                    "number": "Número do sermão",
-                    "verse": "Versículo base",
-                    "outline": "Esboço do sermão",
-                    "content": "Conteúdo do sermão",
-                    "reference": "Referência do sermão"
-                }
-            ]
-        }
-    ],
-    "required": [
-        "title",
-        "date",
-        "sermon"
-    ],
-    "properties": {
-        "title": {
-            "$id": "#/properties/title",
-            "type": "string",
-            "title": "Título do Sermão",
-            "description": "Título do sermão pregado por Wesley",
-            "default": "",
-            "examples": [
-                "A salvação pela fé"
-            ]
-        },
-        "date": {
-            "$id": "#/properties/date",
-            "type": "string",
-            "title": "Data do Sermão",
-            "description": "Data em que o sermão foi pregado",
-            "default": "",
-            "examples": [
-                "11 de junho de 1738"
-            ]
-        },
-        "location": {
-            "$id": "#/properties/location",
-            "type": "string",
-            "title": "The location schema",
-            "description": "Onde o sermão foi pregado",
-            "default": "",
-            "examples": [
-                "Universidade de Oxford"
-            ]
-        },
-        "sermon": {
-            "$id": "#/properties/sermon",
-            "type": "array",
-            "title": "The sermon schema",
-            "description": "An explanation about the purpose of this instance.",
-            "default": [],
-            "examples": [
-                [
+        [
+            {
+                "title": "Título do Sermão",
+                "date": "Data do sermão",
+                "location": "Onde foi pregado",
+                "sermon": [
                     {
                         "language": "pt-BR",
                         "number": "Número do sermão",
                         "verse": "Versículo base",
                         "outline": "Esboço do sermão",
                         "content": "Conteúdo do sermão",
-                        "reference": "Referência do sermão"
+                        "reference": ""
                     }
                 ]
-            ],
-            "additionalItems": true,
-            "items": {
-                "$id": "#/properties/sermon/items",
-                "anyOf": [
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
                     {
-                        "$id": "#/properties/sermon/items/anyOf/0",
-                        "type": "object",
-                        "title": "The first anyOf schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": {},
-                        "examples": [
+                        "title": "Título do Sermão",
+                        "date": "Data do sermão",
+                        "location": "Onde foi pregado",
+                        "sermon": [
                             {
                                 "language": "pt-BR",
                                 "number": "Número do sermão",
                                 "verse": "Versículo base",
                                 "outline": "Esboço do sermão",
                                 "content": "Conteúdo do sermão",
-                                "reference": "Referência do sermão"
+                                "reference": ""
                             }
-                        ],
-                        "required": [
-                            "language",
-                            "number",
-                            "verse",
-                            "outline",
-                            "content",
-                            "reference"
-                        ],
-                        "properties": {
-                            "language": {
-                                "$id": "#/properties/sermon/items/anyOf/0/properties/language",
-                                "type": "string",
-                                "title": "Idioma do sermão",
-                                "description": "Idioma do texto",
-                                "default": "",
-                                "examples": [
-                                    "pt-BR",
-                                    "en",
-                                    "en-US",
-                                    "es"
-                                ]
-                            },
-                            "number": {
-                                "$id": "#/properties/sermon/items/anyOf/0/properties/number",
-                                "type": "string",
-                                "title": "Número do sermão",
-                                "description": "Número do sermão",
-                                "default": "",
-                                "examples": [
-                                    "01",
-                                    "90",
-                                    "100"
-                                ]
-                            },
-                            "verse": {
-                                "$id": "#/properties/sermon/items/anyOf/0/properties/verse",
-                                "type": "string",
-                                "title": "Versículo Base",
-                                "description": "Texto base utilizado no sermão",
-                                "default": "",
-                                "examples": [
-                                    "'Pela graça sois salvos mediante a fé' (Efésios 2.8)",
-                                    "'Moisés escreveu que o homem que pratica a justiça que vem da lei, viverá por ela. Mas a justiça que vem da fé, diz assim: Não digas no teu coração: Quem subirá ao céu (isto é, para trazer do alto a Cristo)? Ou: Quem descerá ao abismo (isto é, para fazer subir a Cristo dentre os mortos)? Mas que diz? A palavra está perto de ti, na tua boca e no teu coração; isto é, a palavra da fé, que pregamos.' (Romanos 10.5-8)"
-                                ]
-                            },
-                            "outline": {
-                                "$id": "#/properties/sermon/items/anyOf/0/properties/outline",
-                                "type": "string",
-                                "title": "Esboço do sermão",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "",
-                                "examples": [
-                                    "Esboço do sermão"
-                                ]
-                            },
-                            "content": {
-                                "$id": "#/properties/sermon/items/anyOf/0/properties/content",
-                                "type": "string",
-                                "title": "The content schema",
-                                "description": "An explanation about the purpose of this instance.",
-                                "default": "",
-                                "examples": [
-                                    "Conteúdo do sermão"
-                                ]
-                            },
-                            "reference": {
-                                "$id": "#/properties/sermon/items/anyOf/0/properties/reference",
-                                "type": "string",
-                                "title": "Referência",
-                                "description": "Site, página ou blog de onde o sermão foi extraído.",
-                                "default": "",
-                                "examples": [
-                                    "https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download"
-                                ]
-                            }
-                        },
-                        "additionalProperties": true
+                        ]
                     }
-                ]
+                ],
+                "required": [
+                    "title",
+                    "date",
+                    "location",
+                    "sermon"
+                ],
+                "properties": {
+                    "title": {
+                        "$id": "#/items/anyOf/0/properties/title",
+                        "type": "string",
+                        "title": "The title schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Título do Sermão"
+                        ]
+                    },
+                    "date": {
+                        "$id": "#/items/anyOf/0/properties/date",
+                        "type": "string",
+                        "title": "The date schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Data do sermão"
+                        ]
+                    },
+                    "location": {
+                        "$id": "#/items/anyOf/0/properties/location",
+                        "type": "string",
+                        "title": "The location schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Onde foi pregado"
+                        ]
+                    },
+                    "sermon": {
+                        "$id": "#/items/anyOf/0/properties/sermon",
+                        "type": "array",
+                        "title": "The sermon schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "examples": [
+                            [
+                                {
+                                    "language": "pt-BR",
+                                    "number": "Número do sermão",
+                                    "verse": "Versículo base",
+                                    "outline": "Esboço do sermão",
+                                    "content": "Conteúdo do sermão",
+                                    "reference": ""
+                                }
+                            ]
+                        ],
+                        "additionalItems": true,
+                        "items": {
+                            "$id": "#/items/anyOf/0/properties/sermon/items",
+                            "anyOf": [
+                                {
+                                    "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0",
+                                    "type": "object",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "language": "pt-BR",
+                                            "number": "Número do sermão",
+                                            "verse": "Versículo base",
+                                            "outline": "Esboço do sermão",
+                                            "content": "Conteúdo do sermão",
+                                            "reference": ""
+                                        }
+                                    ],
+                                    "required": [
+                                        "language",
+                                        "number",
+                                        "verse",
+                                        "outline",
+                                        "content",
+                                        "reference"
+                                    ],
+                                    "properties": {
+                                        "language": {
+                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/language",
+                                            "type": "string",
+                                            "title": "The language schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "pt-BR"
+                                            ]
+                                        },
+                                        "number": {
+                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/number",
+                                            "type": "string",
+                                            "title": "The number schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Número do sermão"
+                                            ]
+                                        },
+                                        "verse": {
+                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/verse",
+                                            "type": "string",
+                                            "title": "The verse schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Versículo base"
+                                            ]
+                                        },
+                                        "outline": {
+                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/outline",
+                                            "type": "string",
+                                            "title": "The outline schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Esboço do sermão"
+                                            ]
+                                        },
+                                        "content": {
+                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/content",
+                                            "type": "string",
+                                            "title": "The content schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "Conteúdo do sermão"
+                                            ]
+                                        },
+                                        "reference": {
+                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/reference",
+                                            "type": "string",
+                                            "title": "The reference schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                ""
+                                            ]
+                                        }
+                                    },
+                                    "additionalProperties": true
+                                }
+                            ]
+                        }
+                    }
+                },
+                "additionalProperties": true
             }
-        }
-    },
-    "additionalProperties": true
+        ]
+    }
 }
