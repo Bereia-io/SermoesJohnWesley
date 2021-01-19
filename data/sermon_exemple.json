@@ -1,17 +1,18 @@
-[
-    {
+{
+    "sermon":{
         "title":"Título do Sermão",
         "date":"Data do sermão",
         "location":"Onde foi pregado",
-        "sermon": [
+        "content":[
             {
             "language":"pt-BR",
             "number":"Número do sermão",
             "verse":"Versículo base",
             "outline": "Esboço do sermão",
-            "content": "Conteúdo do sermão",
+            "body": "Conteúdo do sermão",
             "reference":""
             }
+
         ]
     }
-]
+}

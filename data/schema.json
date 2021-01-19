@@ -1,209 +1,209 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://example.com/example.json",
-    "type": "array",
+    "type": "object",
     "title": "The root schema",
     "description": "The root schema comprises the entire JSON document.",
-    "default": [],
+    "default": {},
     "examples": [
-        [
-            {
+        {
+            "sermon": {
                 "title": "Título do Sermão",
                 "date": "Data do sermão",
                 "location": "Onde foi pregado",
-                "sermon": [
+                "content": [
                     {
                         "language": "pt-BR",
                         "number": "Número do sermão",
                         "verse": "Versículo base",
                         "outline": "Esboço do sermão",
-                        "content": "Conteúdo do sermão",
+                        "body": "Conteúdo do sermão",
                         "reference": ""
                     }
                 ]
             }
-        ]
+        }
     ],
-    "additionalItems": true,
-    "items": {
-        "$id": "#/items",
-        "anyOf": [
-            {
-                "$id": "#/items/anyOf/0",
-                "type": "object",
-                "title": "The first anyOf schema",
-                "description": "An explanation about the purpose of this instance.",
-                "default": {},
-                "examples": [
-                    {
-                        "title": "Título do Sermão",
-                        "date": "Data do sermão",
-                        "location": "Onde foi pregado",
-                        "sermon": [
+    "required": [
+        "sermon"
+    ],
+    "properties": {
+        "sermon": {
+            "$id": "#/properties/sermon",
+            "type": "object",
+            "title": "The sermon schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "title": "Título do Sermão",
+                    "date": "Data do sermão",
+                    "location": "Onde foi pregado",
+                    "content": [
+                        {
+                            "language": "pt-BR",
+                            "number": "Número do sermão",
+                            "verse": "Versículo base",
+                            "outline": "Esboço do sermão",
+                            "body": "Conteúdo do sermão",
+                            "reference": ""
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "title",
+                "date",
+                "location",
+                "content"
+            ],
+            "properties": {
+                "title": {
+                    "$id": "#/properties/sermon/properties/title",
+                    "type": "string",
+                    "title": "The title schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Título do Sermão"
+                    ]
+                },
+                "date": {
+                    "$id": "#/properties/sermon/properties/date",
+                    "type": "string",
+                    "title": "The date schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Data do sermão"
+                    ]
+                },
+                "location": {
+                    "$id": "#/properties/sermon/properties/location",
+                    "type": "string",
+                    "title": "The location schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Onde foi pregado"
+                    ]
+                },
+                "content": {
+                    "$id": "#/properties/sermon/properties/content",
+                    "type": "array",
+                    "title": "The content schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
                             {
                                 "language": "pt-BR",
                                 "number": "Número do sermão",
                                 "verse": "Versículo base",
                                 "outline": "Esboço do sermão",
-                                "content": "Conteúdo do sermão",
+                                "body": "Conteúdo do sermão",
                                 "reference": ""
                             }
                         ]
-                    }
-                ],
-                "required": [
-                    "title",
-                    "date",
-                    "location",
-                    "sermon"
-                ],
-                "properties": {
-                    "title": {
-                        "$id": "#/items/anyOf/0/properties/title",
-                        "type": "string",
-                        "title": "The title schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": "",
-                        "examples": [
-                            "Título do Sermão"
-                        ]
-                    },
-                    "date": {
-                        "$id": "#/items/anyOf/0/properties/date",
-                        "type": "string",
-                        "title": "The date schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": "",
-                        "examples": [
-                            "Data do sermão"
-                        ]
-                    },
-                    "location": {
-                        "$id": "#/items/anyOf/0/properties/location",
-                        "type": "string",
-                        "title": "The location schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": "",
-                        "examples": [
-                            "Onde foi pregado"
-                        ]
-                    },
-                    "sermon": {
-                        "$id": "#/items/anyOf/0/properties/sermon",
-                        "type": "array",
-                        "title": "The sermon schema",
-                        "description": "An explanation about the purpose of this instance.",
-                        "default": [],
-                        "examples": [
-                            [
-                                {
-                                    "language": "pt-BR",
-                                    "number": "Número do sermão",
-                                    "verse": "Versículo base",
-                                    "outline": "Esboço do sermão",
-                                    "content": "Conteúdo do sermão",
-                                    "reference": ""
-                                }
-                            ]
-                        ],
-                        "additionalItems": true,
-                        "items": {
-                            "$id": "#/items/anyOf/0/properties/sermon/items",
-                            "anyOf": [
-                                {
-                                    "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0",
-                                    "type": "object",
-                                    "title": "The first anyOf schema",
-                                    "description": "An explanation about the purpose of this instance.",
-                                    "default": {},
-                                    "examples": [
-                                        {
-                                            "language": "pt-BR",
-                                            "number": "Número do sermão",
-                                            "verse": "Versículo base",
-                                            "outline": "Esboço do sermão",
-                                            "content": "Conteúdo do sermão",
-                                            "reference": ""
-                                        }
-                                    ],
-                                    "required": [
-                                        "language",
-                                        "number",
-                                        "verse",
-                                        "outline",
-                                        "content",
-                                        "reference"
-                                    ],
-                                    "properties": {
-                                        "language": {
-                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/language",
-                                            "type": "string",
-                                            "title": "The language schema",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "",
-                                            "examples": [
-                                                "pt-BR"
-                                            ]
-                                        },
-                                        "number": {
-                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/number",
-                                            "type": "string",
-                                            "title": "The number schema",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "",
-                                            "examples": [
-                                                "Número do sermão"
-                                            ]
-                                        },
-                                        "verse": {
-                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/verse",
-                                            "type": "string",
-                                            "title": "The verse schema",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "",
-                                            "examples": [
-                                                "Versículo base"
-                                            ]
-                                        },
-                                        "outline": {
-                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/outline",
-                                            "type": "string",
-                                            "title": "The outline schema",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "",
-                                            "examples": [
-                                                "Esboço do sermão"
-                                            ]
-                                        },
-                                        "content": {
-                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/content",
-                                            "type": "string",
-                                            "title": "The content schema",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "",
-                                            "examples": [
-                                                "Conteúdo do sermão"
-                                            ]
-                                        },
-                                        "reference": {
-                                            "$id": "#/items/anyOf/0/properties/sermon/items/anyOf/0/properties/reference",
-                                            "type": "string",
-                                            "title": "The reference schema",
-                                            "description": "An explanation about the purpose of this instance.",
-                                            "default": "",
-                                            "examples": [
-                                                ""
-                                            ]
-                                        }
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/sermon/properties/content/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/sermon/properties/content/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "language": "pt-BR",
+                                        "number": "Número do sermão",
+                                        "verse": "Versículo base",
+                                        "outline": "Esboço do sermão",
+                                        "body": "Conteúdo do sermão",
+                                        "reference": ""
+                                    }
+                                ],
+                                "required": [
+                                    "language",
+                                    "number",
+                                    "verse",
+                                    "outline",
+                                    "body",
+                                    "reference"
+                                ],
+                                "properties": {
+                                    "language": {
+                                        "$id": "#/properties/sermon/properties/content/items/anyOf/0/properties/language",
+                                        "type": "string",
+                                        "title": "The language schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "pt-BR"
+                                        ]
                                     },
-                                    "additionalProperties": true
-                                }
-                            ]
-                        }
+                                    "number": {
+                                        "$id": "#/properties/sermon/properties/content/items/anyOf/0/properties/number",
+                                        "type": "string",
+                                        "title": "The number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Número do sermão"
+                                        ]
+                                    },
+                                    "verse": {
+                                        "$id": "#/properties/sermon/properties/content/items/anyOf/0/properties/verse",
+                                        "type": "string",
+                                        "title": "The verse schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Versículo base"
+                                        ]
+                                    },
+                                    "outline": {
+                                        "$id": "#/properties/sermon/properties/content/items/anyOf/0/properties/outline",
+                                        "type": "string",
+                                        "title": "The outline schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Esboço do sermão"
+                                        ]
+                                    },
+                                    "body": {
+                                        "$id": "#/properties/sermon/properties/content/items/anyOf/0/properties/body",
+                                        "type": "string",
+                                        "title": "The body schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Conteúdo do sermão"
+                                        ]
+                                    },
+                                    "reference": {
+                                        "$id": "#/properties/sermon/properties/content/items/anyOf/0/properties/reference",
+                                        "type": "string",
+                                        "title": "The reference schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
                     }
-                },
-                "additionalProperties": true
-            }
-        ]
-    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
 }
