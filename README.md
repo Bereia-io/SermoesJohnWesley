@@ -27,10 +27,10 @@ O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
             "number":"Número do sermão",
             "verse":"Versículo base",
             "outline": "Esboço do sermão",
-            "content": "..."
+            "content": "...",
+            "reference":"Referência de onde o sermão foi retirado"
         }
     ],
-    "reference":"Referência de onde o sermão foi retirado"
 }
 ```
 
@@ -72,14 +72,16 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
         "number":"...",
         "verse":"...",
         "outline":"...",
-        "content":"..."
+        "content":"...",
+        "reference":"..."
         },
         {
         "language":"en",
         "number":"...",
         "verse":"...",
         "outline":"...",
-        "content":"..."
+        "content":"...",
+        "reference":"..."
         }
     ]   
 }
