@@ -8,8 +8,8 @@
         "number":"Número do sermão",
         "verse":"Versículo base",
         "outline": "Esboço do sermão",
-        "content": "Conteúdo do sermão"
+        "content": "Conteúdo do sermão",
+        "reference":""
         }
-    ],
-    "reference":""
+    ]
 }
