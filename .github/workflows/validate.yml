@@ -16,5 +16,5 @@ jobs:
       - name: Validate JSON
         uses: docker://nhalstead00/validate-json-action:latest
         env:
-          INPUT_SCHEMA: ./schema.json
-          INPUT_JSONS: /data/
+          INPUT_SCHEMA: /data/schema.json
+          INPUT_JSONS: /data/sermon_01.json
