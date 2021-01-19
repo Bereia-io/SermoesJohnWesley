@@ -19,9 +19,9 @@ O arquivo `sermon_exemple.json` possuí a seguinte estrutura:
             "content": "..."
         }
     ],
-    "reference":""
+    "reference":"Referência de onde o sermão foi retirado"
 }
-ˋˋˋ
+```
 
 **Campos**
 
