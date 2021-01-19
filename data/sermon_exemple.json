@@ -4,13 +4,15 @@
         "title":{":type": "line"},
         "date":{":type": "line"},
         "location":{":type": "line"},
-        "content": {
-            "language":{":type": "line"},
-            "number":{":type": "line"},
-            "verse":{":type": "text", ":richtext": true},
-            "outline":{":type": "text", ":richtext": true},
-            "body":{":type": "text", ":richtext": true},
-            "reference":{":type": "line"}
-        }
+        "content": [
+            {
+                "language":{":type": "line"},
+                "number":{":type": "line"},
+                "verse":{":type": "text", ":richtext": true},
+                "outline":{":type": "text", ":richtext": true},
+                "body":{":type": "text", ":richtext": true},
+                "reference":{":type": "line"}
+            }
+        ]
     }
 }
