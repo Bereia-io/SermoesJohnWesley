@@ -2,7 +2,11 @@
 # https://github.com/ajv-validator/ajv-cli
 name: Validate JSONs
 
-on: [pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   verify-json-validation:
