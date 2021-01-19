@@ -9,6 +9,6 @@ John Wesley editou os sermões em dois momentos: logo depois do início da fase 
 - [Centro de Estudos Wesleyanos](http://portal.metodista.br/cew/)
 
 # Como contribuir
-Apoie o desenvolvimento do projeto implementando e corrigindo o código (confira as issues abertas) e/ou cadastrando sermões ausentes e adicionando sermões em outros idiomas. Mais informações em na [Wiki do projeto](/wiki):
+Apoie o desenvolvimento do projeto implementando e corrigindo o código (confira as issues abertas) e/ou cadastrando sermões ausentes e adicionando sermões em outros idiomas. Mais informações em na [Wiki do projeto](https://github.com/Bereia-io/SermoesJohnWesley/wiki):
 
-- [Como cadastrar um novo sermão](/wiki/Cadastrar-novos-Sermões)
+- [Como cadastrar um novo sermão](https://github.com/Bereia-io/SermoesJohnWesley/wiki/Cadastrar-novos-Serm%C3%B5es)
