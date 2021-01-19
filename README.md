@@ -41,8 +41,6 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
 
 ```json
 {
-    ...
-
     "sermon": [
         {
         "language":"pt-BR",
@@ -58,8 +56,7 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
         "outline":"...",
         "content":"..."
         }
-    ],
-    
+    ]   
 }
 ```
 
@@ -67,19 +64,14 @@ Para adicionar outro idioma a um sermão que já foi cadastrado apenas duplique 
 
 ```json
 {
-    ...
-
     "sermon": [
         {
-        "language":"pt-BR",
-        ...
+        "language":"pt-BR"
         },
         {
         "language":"pt",
-        ...
         }
-    ],
-    
+    ]
 }
 ```
 
