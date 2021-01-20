@@ -1,7 +1,8 @@
 {
     ":name":"Sermões John Wesley",
-    "sermon":{
+    "sermons":{
         ":items": {
+            "path":"",
             "title":{":type": "line"},
             "number":{":type": "line"},
             "date":{":type": "line"},
