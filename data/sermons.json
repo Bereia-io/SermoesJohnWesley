@@ -1,10 +1,11 @@
 {
-  "sermon": [
+  "sermons": [
     {
-      "location": "Universidade de Oxford",
+      "path":"a-salvacao-pela-fe",
       "title": "A Salvação pela fé",
-      "date": "11 de junho de 1738",
       "number": "001",
+      "date": "11 de junho de 1738",
+      "location": "Universidade de Oxford",
       "content": [
         {
           "language": "pt-BR",
@@ -16,6 +17,7 @@
       ]
     },
     {
+      "path":"os-quase-cristaos",
       "title": "Os quase cristãos!",
       "number": "002",
       "date": "25 de julho de 1741",
