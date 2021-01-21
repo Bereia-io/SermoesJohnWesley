@@ -25,11 +25,9 @@ export default function Index({ allPosts }) {
         </Head>
 
         <Header title="Sermões de John Wesley" description='"Ponha fogo no seu sermão ou ponha seu sermão no fogo"'/>
-
         <Feed>
           {morePosts.length > 0 && <More posts={morePosts} />}
         </Feed>
-
         <Footer copyright="Um site do Projeto Bereia"/>
     </>
   )
@@ -38,6 +36,7 @@ export default function Index({ allPosts }) {
 export async function getStaticProps() {
   const allPosts = getAllPosts([
     'title',
+    'number',
     'date',
     'slug',
     'verse',

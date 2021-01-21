@@ -30,6 +30,7 @@ const PostCard = styled.a`
 
 export default function Card({
   title,
+  number,
   date,
   verse,
   slug,
@@ -37,7 +38,7 @@ export default function Card({
   return (
     <Link as={`/${slug}`} href="/[slug]">
       <PostCard>
-        <h1>Sermão: {title}</h1>
+        <h1>Sermão {number}: {title}</h1>
         <h2>{verse}</h2>
         <span>Pregado no dia {date}</span>
       </PostCard>
