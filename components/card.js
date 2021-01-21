@@ -12,6 +12,7 @@ const PostCard = styled.a`
   justify-content:center;
   font-family:'Merriweather', serif;
   border:thin solid #E5E7EB;
+  cursor: pointer;
 
   @media screen and (min-width:1024px) {
     width:30%;
