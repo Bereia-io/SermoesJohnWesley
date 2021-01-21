@@ -14,6 +14,12 @@ const Feed = styled.main`
   flex-direction:column;
   justify-content:center;
   align-items:center;
+
+  @media screen and (min-width:1024px) {
+    padding:6rem 0 6rem;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
 `
 
 export default function Index({ allPosts }) {

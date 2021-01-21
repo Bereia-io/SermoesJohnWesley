@@ -10,12 +10,24 @@ const PostCard = styled.a`
   display:flex;
   flex-direction:column;
   justify-content:center;
+  font-family:'Merriweather', serif;
   border:thin solid #E5E7EB;
+
+  @media screen and (min-width:1024px) {
+    width:30%;
+    height:24rem;
+    justify-content:flex-start;
+    margin:0 1rem 0 1rem;
+  }
 
   h1 {
     font-size:2rem;
     color:#374151;
     margin-bottom:2rem;
+
+    strong {
+      font-weight:900;
+    }
   }
   h2 {
     font-size:1.4rem;
@@ -38,7 +50,7 @@ export default function Card({
   return (
     <Link as={`/${slug}`} href="/[slug]">
       <PostCard>
-        <h1>Sermão {number}: {title}</h1>
+        <h1><strong>Sermão {number}:</strong> {title}</h1>
         <h2>{verse}</h2>
         <span>Pregado no dia {date}</span>
       </PostCard>
