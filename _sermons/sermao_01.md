@@ -2,9 +2,13 @@
 title: 'A Salvação pela fé'
 verse: '"Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus"(Efésios 2:8)'
 location: 'Universidade de Oxford'
-outline: 'Resumo'
 date: '11 de junho de 1738'
+reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download'
 ---
+
+## Esboço
+
+## Sermão
 
 **1.** TODAS as bênçãos que Deus comunica ao homem vêm de sua mera graça, munificência ou favor; de sua livre, imerecida benevolência, representando graça inteiramente espontânea, visto nenhum direito ter o homem à menor clemência por parte da Divindade. Foi a livre graça que _"formou o homem do pó da terra e nele soprou a alma vivente"_, estampando nessa alma a imagem de Deus e _"sujeitando todas as coisas debaixo de seus pés"_.
 
