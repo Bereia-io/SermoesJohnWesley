@@ -1,63 +1,75 @@
+import { useRouter } from 'next/router'
+import ErrorPage from 'next/error'
+import { getPostBySlug, getAllPosts } from '../lib/api'
 import Head from 'next/head'
-// import { useRouter } from 'next/router'
-import data from '../data/sermons.json'
+import markdownToHtml from '../lib/markdownToHtml'
 
-export async function getStaticProps({params}) {
-    const currentPath = params.slug
-    const sermon = data.sermons.find(sermon => sermon.path === currentPath) || {
-        notFound: true
-    }
+export default function Post({ post, morePosts, preview }) {
+  const router = useRouter()
+  if (!router.isFallback && !post?.slug) {
+    return <p>Não encontrado</p>
+  }
+  return (
+    <>
+        {router.isFallback ? (
+          <title>Carregando...</title>
+        ) : (
+          <>
+              <Head>
+                <title>
+                  {post.title} | Sermões de John Wesley
+                </title>
+              </Head>
 
-    return {
-        props: {
-            sermon
-        },
-        revalidate: 60
-    }
+            <article>
+              <header>
+                <h1>{post.title}</h1>
+                <p>{post.location}</p>
+                <p>{post.date}</p>
+              </header>
+              <section>
+                {post.verse}
+              </section>
+              <section dangerouslySetInnerHTML={{__html: post.content}} />
+            </article>
+          </>
+        )}
+    </>
+  )
+}
+
+export async function getStaticProps({ params }) {
+  const post = getPostBySlug(params.slug, [
+    'title',
+    'date',
+    'slug',
+    'verse',
+    'location',
+    'content',
+  ])
+  const content = await markdownToHtml(post.content || '')
+
+  return {
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  }
 }
 
 export async function getStaticPaths() {
-    const paths = data.sermons.map(sermon => {
-        const slug = sermon.path
-        return {
-            params: {
-                slug: slug.toString(),
-            }
-        };
-    });
+  const posts = getAllPosts(['slug'])
 
-    return {
-        paths, 
-        fallback: true
-    };
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      }
+    }),
+    fallback: false,
+  }
 }
-
-const Page = ({sermon}) => {
-    if (!sermon) {
-        // fix Next bug while building
-        // "Error occurred prerendering page "/[...slug]". Read more: https://err.sh/next.js/prerender-error"
-        // https://github.com/vercel/next.js/issues/12846
-        return null;
-    }
-    return (
-        <>
-            <Head>
-            <title>{sermon.title} | Sermões de John Wesley</title>
-            </Head>
-            <h1>{sermon.title}</h1>
-            <h2>{sermon.location}</h2>
-            <h2>Sermão pregado no dia: {sermon.date}</h2>
-            {sermon.content.map(content => 
-                <section dangerouslySetInnerHTML={{__html: content.outline}}></section>
-            )}
-            {sermon.content.map(content => 
-                <section dangerouslySetInnerHTML={{__html: content.verse}}></section>
-            )}
-            {sermon.content.map(content => 
-                <section dangerouslySetInnerHTML={{__html: content.body}}></section>
-            )}
-        </>
-    );
-}
-
-export default Page
