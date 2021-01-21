@@ -1,8 +1,7 @@
 {
   "name": "sermoesjohnwesley",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Sermões de John Wesley - Projeto Bereia",
   "scripts": {
     "dev": "next dev -p 9000",
     "build": "next build",
