@@ -1,24 +1,17 @@
-import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
-import styled from 'styled-components'
+import More from '../components/more'
+import { getAllPosts } from '../lib/api'
 
 export default function Index({ allPosts }) {
-  
+  const morePosts = allPosts
   return (
     <>
         <Head>
-          <title>Sermões de John Wesley</title>
+          <title>Sermões de John Wesley | Projeto Bereia</title>
         </Head>
 
-        <header>
-        </header>
-
         <section>
-        {/* <ul>
-          {props.posts.map(post => (
-            <li key={post.id}>{post.title}</li>
-            ))}
-          </ul> */}
+        {morePosts.length > 0 && <More posts={morePosts} />}
         </section>
     </>
   )
@@ -31,7 +24,6 @@ export async function getStaticProps() {
     'slug',
     'verse',
     'location',
-    'outline',
     'content'
   ])
 
