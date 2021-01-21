@@ -1,8 +1,9 @@
 ---
 title: 'Os quase cristãos!'
+number: 2
 verse: '"Com pouco me persuades a fazer-me cristão" (Atos 26.28)'
 location: 'Santa Maria, Oxford'
-referente: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download'
+reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download'
 date: '25 de julho de 1741'
 ---
 
@@ -22,18 +23,23 @@ date: '25 de julho de 1741'
 
 ## Sermão
 
-MUITOS há que chegam até este ponto: pelo menos, desde que apareceu no mundo a religião cristã, sempre houve muitos, em todas as épocas e nações, que quase chegaram a ser persuadidos a se fazerem cristãos. Mas, visto que perante Deus de nada vale ir somente até esse ponto, é para nós da mais alta importância considerar:
+Muitos há que chegam até este ponto: pelo menos, desde que apareceu no mundo a religião cristã, sempre houve muitos, em todas as épocas e nações, que quase chegaram a ser persuadidos a se fazerem cristãos. Mas, visto que perante Deus de nada vale ir somente até esse ponto, é para nós da mais alta importância considerar:
 
-**Primeiro, o que implica ser quase cristão;**
-**Segundo, o que é ser totalmente cristão.**
+Primeiro, o que implica ser quase cristão; Segundo, o que é ser totalmente cristão.
 
-**1.** Ser quase cristão é ter, primeiro, honestidade pagã. Ninguém levantará, suponho, qualquer objeção a isto, especialmente quando esclareço que, por honestidade pagã, quero dizer, não apenas o que se recomenda nos escritos de seus filósofos, mas o que os pagãos vulgares esperavam uns dos outros, e, muitos, dentre eles, na realidade traduziam em obras. Segundo as boas regras, eles recebiam lições segundo as, quais não deviam ser injustos, nem usurpar os bens do próximo; nem cometer furto ou latrocínio, nem oprimir o pobre; ensinava-sê-lhas a não praticarem extorsão contra quem quer que fosse, a não enganarem ou ludibriar em ao pobre ou ao rico, em qualquer negócio que tivessem com eles; a não espoliarem a ninguém de seus direitos; e, se fosse possível, não deverem coisa alguma a ninguém.
+**1.** Ser quase cristão é ter, primeiro, honestidade pagã. Ninguém levantará, suponho, qualquer objeção a isto, especialmente quando esclareço que, por honestidade pagã, quero dizer, não apenas o que se recomenda nos escritos de seus filósofos, mas o que os pagãos vulgares esperavam uns dos outros, e, muitos, dentre eles, na realidade traduziam em obras. 
+
+Segundo as boas regras, eles recebiam lições segundo as, quais não deviam ser injustos, nem usurpar os bens do próximo; nem cometer furto ou latrocínio, nem oprimir o pobre; ensinava-sê-lhas a não praticarem extorsão contra quem quer que fosse, a não enganarem ou ludibriar em ao pobre ou ao rico, em qualquer negócio que tivessem com eles; a não espoliarem a ninguém de seus direitos; e, se fosse possível, não deverem coisa alguma a ninguém.
 
 **2.** Mais: os pagãos em geral admitiam que alguma atenção devia ser dada à verdade, bem como à justiça. Conseqüentemente, não só abominavam os perjuros, os que invocavam a Deus como testemunha de falsidades, mas também o que era conhecido como difamador do próximo, como imputador de faltas irreais. E, na verdade, no mesmo conceito tinham os mentirosos inveterados de qualquer espécie, considerando-os como a desgraça do gênero humano e a peste da sociedade.
 
 **3.** Ainda mais: havia certa medida de amor e de amparo que eles esperavam uns dos outros. Esperavam que um prestasse assistência ao outro, sem prejuízo grave da parte de quem prestasse semelhante ajuda. Isso exercitavam não somente através dos poucos ofícios humanitários que não importassem em despesas e trabalhos, mas ainda no alimentar o faminto, se possuíam pão em abundância; no vestir os nus com suas roupas supérfluas, e, em geral, dando ao necessitado as coisas de que não precisavam. Até aí chega a honestidade pagã, honestidade que se inclui na condição de — quase cristão.
 
-**4.** A segunda coisa inerente ao ser quase cristão, é a posse da forma da piedade, daquela piedade que é prescrita no Evangelho de Cristo; é a aparência exterior de real cristão. Em conseqüência, o quase cristão nada faz que o Evangelho proíba. Não toma o nome de Deus em vão; não abençoa, nem amaldiçoa; não jura de modo nenhum, mas seu falar é sim, sim; não, não. Não profana o dia do Senhor, nem permite que ele seja profanado, nem mesmo pelo peregrino que viva de suas portas para dentro. Não só aborrece todo adultério material e toda impureza, mas repele qualquer palavra ou olhar que direta ou indiretamente tenda para a quebra da castidade; detesta todas as palavras ociosas, abstendo-se de detração, maledicência, anedotas, conversas picantes e “toda prosa insensata e zombeteira”, — εύτραπελία— espécie de virtude no conceito dos moralistas pagãos; em suma, guarda-se de toda conversação que não seja “boa para o fim de edificação”, e que, conseqüentemente, “entristece o Santo Espírito de Deus, pelo qual somos selados para o dia da redenção”.
+**4.** A segunda coisa inerente ao ser quase cristão, é a posse da forma da piedade, daquela piedade que é prescrita no Evangelho de Cristo; é a aparência exterior de real cristão. Em conseqüência, o quase cristão nada faz que o Evangelho proíba. 
+
+Não toma o nome de Deus em vão; não abençoa, nem amaldiçoa; não jura de modo nenhum, mas seu falar é sim, sim; não, não. Não profana o dia do Senhor, nem permite que ele seja profanado, nem mesmo pelo peregrino que viva de suas portas para dentro. 
+
+Não só aborrece todo adultério material e toda impureza, mas repele qualquer palavra ou olhar que direta ou indiretamente tenda para a quebra da castidade; detesta todas as palavras ociosas, abstendo-se de detração, maledicência, anedotas, conversas picantes e “toda prosa insensata e zombeteira”, — εύτραπελία— espécie de virtude no conceito dos moralistas pagãos; em suma, guarda-se de toda conversação que não seja “boa para o fim de edificação”, e que, conseqüentemente, “entristece o Santo Espírito de Deus, pelo qual somos selados para o dia da redenção”.
 
 **5.** Abstém-se de “excesso de vinho”, de “orgias e glutonaria”. Evita, tanto quanto esteja em suas mãos, toda discórdia e contenta, sempre se esforçando por viver pacificamente com todos os homens. E, se sofre dano, não se vinga, nem retribui o mal com o mal. Não zomba, não graceja, não se ri em face dos erros ou das enfermidades os homens do próximo. Não deseja mal, ofensa ou prejuízo a ninguém, mas em todas as coisas procede e age de pleno acordo com a regra: “Não faças aos outros aquilo que não queres que te façam”.
 
