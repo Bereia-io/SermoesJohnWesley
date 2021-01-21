@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
+import {Header} from '../components/sermonHeader'
+import {Sermon} from '../components/sermonBody'
+import {Footer} from '../components/siteFooter'
 import { getPostBySlug, getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import markdownToHtml from '../lib/markdownToHtml'
@@ -15,23 +17,15 @@ export default function Post({ post, morePosts, preview }) {
           <title>Carregando...</title>
         ) : (
           <>
-              <Head>
-                <title>
-                  {post.title} | Sermões de John Wesley
-                </title>
-              </Head>
+          <Head>
+            <title>
+              {post.title} | Sermões de John Wesley
+            </title>
+          </Head>
 
-            <article>
-              <header>
-                <h1>{post.title}</h1>
-                <p>{post.location}</p>
-                <p>{post.date}</p>
-              </header>
-              <section>
-                {post.verse}
-              </section>
-              <section dangerouslySetInnerHTML={{__html: post.content}} />
-            </article>
+          <Header title={post.title} verse={post.verse} date={post.date} />
+          <Sermon html={post.content} reference={post.reference} title={post.title} />
+          <Footer copyright="Um site do Projeto Bereia"/>
           </>
         )}
     </>
