@@ -1,5 +1,8 @@
+import React, { Component } from 'react';
+import { FacebookProvider, Comments } from 'react-facebook';
 import styled from 'styled-components'
 import ShareButtons from './ShareButtons'
+import dynamic from 'next/dynamic'
 
 const Article = styled.article`
     position:relative;
@@ -94,6 +97,19 @@ const ArticleFooter = styled.footer`
         }
     }
 `
+ 
+const SermonComments = styled.section`
+    margin:6rem 0 0 0;
+`
+
+function FacebookComments(props) {
+    return(
+      <FacebookProvider appId={`${process.env.FACEBOOK_APP_ID}`}>
+        <Comments href={props.url} width="100%" />
+      </FacebookProvider>
+    )
+}
+
 export function Sermon(props) {
     return(
         <>
@@ -105,6 +121,9 @@ export function Sermon(props) {
                 </section>
             </ArticleFooter>
             <ShareButtons url={props.slug} quote={props.verse} title={props.title}/>
+            <SermonComments>
+                <FacebookComments url={props.slug}/>
+            </SermonComments>
         </Article>
         </>
     )

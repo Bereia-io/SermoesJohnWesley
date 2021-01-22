@@ -29,6 +29,8 @@ export default function Post({ post, morePosts, preview }) {
             <meta name="title" content={`${post.title} | Sermões John Wesley`}/>
             <meta name="description" content={post.verse}/>
 
+            <meta property="fb:app_id" content="172182567581276"/>
+
             <meta property="og:type" content="website"/>
             <meta property="og:url" content={`https://sermoesjohnwesley.com.br/${post.slug}`}/>
             <meta property="og:title" content={`${post.title} | Sermões John Wesley`}/>
@@ -47,6 +49,9 @@ export default function Post({ post, morePosts, preview }) {
             <script src="/assets/scripts/sharer.min.js" />
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCLENHTT0N"></script>
             <script src="/assets/scripts/googleanalytics.js"/>
+
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0&appId=172182567581276&autoLogAppEvents=1" nonce="kqNuzsRX"></script>
           </Head>
           <Navigation />
           <Header title={post.title} verse={post.verse} date={post.date} />
