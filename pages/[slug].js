@@ -1,3 +1,4 @@
+import getConfig from "next/config";
 import { useRouter } from 'next/router'
 import {Navigation} from '../components/siteNav'
 import {Header} from '../components/sermonHeader'
@@ -6,9 +7,15 @@ import {Footer} from '../components/siteFooter'
 import { getPostBySlug, getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import markdownToHtml from '../lib/markdownToHtml'
+const { publicRuntimeConfig } = getConfig();
+
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
+  const { SITE_URL } = process.env
+  
+  const ogImage = `${publicRuntimeConfig.SITE_URL}/api/image-generator?title=${post.title}` + '&' + `number=${post.number}` + '&' +`description=${post.verse}`
+
   if (!router.isFallback && !post?.slug) {
     return <p>Não encontrado</p>
   }
@@ -20,6 +27,22 @@ export default function Post({ post, morePosts, preview }) {
           <>
           <Head>
             <title>{post.title} | Sermões John Wesley</title>
+
+            <meta name="title" content={`${post.title} | Sermões John Wesley`}/>
+            <meta name="description" content={post.verse}/>
+
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content={`https://sermoesjohnwesley.com.br/${post.slug}`}/>
+            <meta property="og:title" content={`${post.title} | Sermões John Wesley`}/>
+            <meta property="og:description" content={post.verse}/>
+            <meta property="og:image" content={`${ogImage}`}/>
+
+            <meta property="twitter:card" content="summary_large_image"/>
+            <meta property="twitter:url" content={`https://sermoesjohnwesley.com.br/${post.slug}`}/>
+            <meta property="twitter:title" content={`${post.title} | Sermões John Wesley`}/>
+            <meta property="twitter:description" content={post.verse}/>
+            <meta property="twitter:image" content={`${ogImage}`}/>
+
           </Head>
           <Navigation />
           <Header title={post.title} verse={post.verse} date={post.date} />
@@ -40,6 +63,8 @@ export async function getStaticProps({ params }) {
     'location',
     'reference',
     'content',
+    'image',
+    'number'
   ])
   const content = await markdownToHtml(post.content || '')
 
