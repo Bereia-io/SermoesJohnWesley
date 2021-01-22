@@ -28,7 +28,7 @@ export function Footer(props) {
         <SiteFooter>
             <Link href="/">
                 <Image
-                    src="/../public/assets/logos/site-logo_v1.svg"
+                    src="/assets/logos/site-logo_v1.svg"
                     alt="Sermões John Wesley"
                     width={300}
                     height={100}

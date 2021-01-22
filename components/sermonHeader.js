@@ -94,7 +94,7 @@ export function Header(props) {
             <p>Sermão pregado no dia {props.date} {props.location}</p>
             
             <Image
-                src="/../public/assets/images/header.webp"
+                src="/assets/images/header.webp"
                 alt="Picture of the author"
                 layout="fill"
                 objectFit="cover"

@@ -65,7 +65,7 @@ export function Header(props) {
             <h2>{props.description}</h2>
             <p>{props.verse}</p>
             <Image
-                src="/../public/assets/images/header.webp"
+                src="/assets/images/header.webp"
                 alt="Picture of the author"
                 layout="fill"
                 objectFit="cover"
