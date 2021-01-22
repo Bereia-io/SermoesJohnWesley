@@ -1,10 +1,11 @@
 ---
 title: 'Os quase cristãos!'
-number: 2
+number: '002'
 verse: '"Com pouco me persuades a fazer-me cristão" (Atos 26.28)'
 location: 'Santa Maria, Oxford'
 reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download'
 date: '25 de julho de 1741'
+image: '/images/header.webp'
 ---
 
 ## Esboço

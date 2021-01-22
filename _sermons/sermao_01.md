@@ -1,10 +1,11 @@
 ---
 title: 'A Salvação pela fé'
-number: 1
-verse: '"Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus"(Efésios 2:8)'
+number: '001'
+verse: '"Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus" (Efésios 2:8)'
 location: 'Universidade de Oxford'
 date: '11 de junho de 1738'
 reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download'
+image: '/images/header.webp'
 ---
 
 ## Esboço
