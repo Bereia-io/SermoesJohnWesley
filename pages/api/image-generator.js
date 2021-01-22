@@ -95,7 +95,8 @@ export default async (req, res) => {
     res.setHeader('Content-Type', 'text/html')
     return res.end(html)
   }
-  const file = await getScreenshot(html, { width: 1200, height: 627 });
+  const file = await getScreenshot(html, { width: 1200, height: 627 })
+  res.setHeader('Cache-Control', 's-maxage=30, stale-while-revalidate')
   res.setHeader('Content-Type', 'image/png')
   res.end(file);
 }
