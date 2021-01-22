@@ -12,8 +12,8 @@ const SiteFooter = styled.footer`
     align-items:center;
     background:#E5E7EB;
 
-    img {
-        width:150px;
+    a {
+        cursor: pointer;
     }
 
     strong {
@@ -27,12 +27,14 @@ export function Footer(props) {
     return(
         <SiteFooter>
             <Link href="/">
+                <a>
                 <Image
                     src="/assets/logos/site-logo_v1.svg"
                     alt="Sermões John Wesley"
-                    width={300}
-                    height={100}
+                    width={150}
+                    height={50}
                 />
+                </a>
             </Link>
             <strong>
                 {props.copyright}

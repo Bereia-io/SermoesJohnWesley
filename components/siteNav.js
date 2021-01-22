@@ -15,8 +15,8 @@ const SiteNav = styled.nav`
     background:#ffffff;
     z-index:900;
 
-    img {
-        width:150px;
+    a {
+        cursor: pointer;
     }
 `
 
@@ -24,12 +24,14 @@ export function Navigation() {
     return (
         <SiteNav>
             <Link href="/">
+                <a>
                 <Image
                     src="/assets/logos/site-logo_v1.svg"
                     alt="Sermões John Wesley"
-                    width={300}
-                    height={100}
+                    width={150}
+                    height={50}
                 />
+                </a>
             </Link>
         </SiteNav>
     )
