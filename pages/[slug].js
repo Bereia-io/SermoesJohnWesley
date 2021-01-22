@@ -45,6 +45,8 @@ export default function Post({ post, morePosts, preview }) {
             <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat&display=swap" rel="stylesheet" />
 
             <script src="/assets/scripts/sharer.min.js" />
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCLENHTT0N"></script>
+            <script src="/assets/scripts/googleanalytics.js"/>
           </Head>
           <Navigation />
           <Header title={post.title} verse={post.verse} date={post.date} />
