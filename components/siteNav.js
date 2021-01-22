@@ -2,30 +2,27 @@ import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const SiteFooter = styled.footer`
+const SiteNav = styled.nav`
+    position:fixed;
+    top:0;
+    left:0;
     width:100vw;
-    height:auto;
-    padding:4rem 0 4rem;
+    height:12vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
-    background:#E5E7EB;
+    box-shadow:0 0 6px rgba(0,0,0,.2);
+    background:#ffffff;
+    z-index:900;
 
     img {
         width:150px;
     }
-
-    strong {
-        font-family:'Montserrat', sans-serif;
-        font-size:1.2rem;
-        color:#6B7280;
-    }
 `
 
-export function Footer(props) {
-    return(
-        <SiteFooter>
+export function Navigation() {
+    return (
+        <SiteNav>
             <Link href="/">
                 <Image
                     src="/../public/assets/logos/site-logo_v1.svg"
@@ -34,9 +31,6 @@ export function Footer(props) {
                     height={100}
                 />
             </Link>
-            <strong>
-                {props.copyright}
-            </strong>
-        </SiteFooter>
+        </SiteNav>
     )
 }

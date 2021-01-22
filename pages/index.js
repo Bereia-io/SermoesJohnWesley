@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {Navigation} from '../components/siteNav'
 import {Header} from '../components/siteHeader'
 import {Footer} from '../components/siteFooter'
 import More from '../components/more'
@@ -6,19 +7,22 @@ import { getAllPosts } from '../lib/api'
 import styled from 'styled-components'
 
 const Feed = styled.main`
+  position:relative;
   width:80vw;
   height:auto;
+  margin:-10vh auto 0;
   padding:2rem 0 4rem;
-  margin:0 auto;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  z-index:10;
 
   @media screen and (min-width:1024px) {
-    padding:6rem 0 6rem;
-    flex-direction:row;
-    flex-wrap:wrap;
+    padding:0 0 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 10px;
   }
 `
 
@@ -29,6 +33,8 @@ export default function Index({ allPosts }) {
         <Head>
           <title>Sermões de John Wesley | Projeto Bereia</title>
         </Head>
+
+        <Navigation />
 
         <Header title="Sermões de John Wesley" description='"Ponha fogo no seu sermão ou ponha seu sermão no fogo"'/>
         <Feed>

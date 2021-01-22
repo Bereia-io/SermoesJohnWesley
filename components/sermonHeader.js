@@ -1,10 +1,12 @@
+import Image from 'next/image'
 import styled from 'styled-components'
 
-const HeroHeader = styled.header`
+const SermonHeader = styled.header`
+    position:relative;
     margin-bottom:2rem;
     padding:4rem 2rem 4rem 2rem;
     width:100vw;
-    height:70vh;
+    height:80vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -13,11 +15,24 @@ const HeroHeader = styled.header`
     background-color:#F9FAFB;
 
     @media screen and (min-width:1024px) {
-        height:80vh;
+        height:95vh;
     }
 
-    h1, h2, div {
-        font-family:'Montserrat', serif;
+    :before {
+        position:absolute;
+        content:'';
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,.8);
+        z-index:1;
+    }
+
+    h1, h2, p {
+        position:relative;
+        font-family:'Merriweather', serif;
+        z-index:2;
 
         @media screen and (min-width:1024px) {
             max-width:50vw;
@@ -26,7 +41,7 @@ const HeroHeader = styled.header`
 
     h1 {
         font-size:3rem;
-        color:#374151;
+        color:#F9FAFB;
 
         @media screen and (min-width:1024px) {
             font-size:4rem;
@@ -38,7 +53,7 @@ const HeroHeader = styled.header`
         font-size:1.8rem;
         font-weight:400;
         line-height:1.8rem;
-        color:#6B7280;
+        color:#F3F4F6;
 
         @media screen and (min-width:1024px) {
             font-size:2rem;
@@ -46,13 +61,13 @@ const HeroHeader = styled.header`
         }
     }
 
-    div {
+    p {
         width:80vw;
         margin-top:2rem;
         padding-top:1.6rem;
         font-size:1.4rem;
-        color:#6B7280;
-        border-top:thin solid #E5E7EB;
+        color:#E5E7EB;
+        border-top:thin solid #6B7280;
 
         @media screen and (min-width:1024px) {
             margin-top:4rem;
@@ -60,16 +75,30 @@ const HeroHeader = styled.header`
             font-size:1.6rem;
         }
     }
+
+    img {
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        z-index:0;
+    }
 `
 
 export function Header(props) {
     return (
-        <HeroHeader>
+        <SermonHeader>
             <h1>{props.title}</h1>
             <h2>{props.verse}</h2>
-            <div>
-                <p>Sermão pregado no dia {props.date} {props.location}</p>
-            </div>
-        </HeroHeader>
+            <p>Sermão pregado no dia {props.date} {props.location}</p>
+            
+            <Image
+                src="/../public/assets/images/header.webp"
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="cover"
+            />
+        </SermonHeader>
     )
 }

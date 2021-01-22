@@ -1,22 +1,28 @@
 import styled from 'styled-components'
 
 const Article = styled.article`
-    width:74vw;
+    position:relative;
+    width:90vw;
     font-family:'Merriweather', serif;
-    margin:2rem auto 2rem;
-    padding-bottom:2rem;
+    margin:-5vh auto 2rem;
+    padding:2rem;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    z-index:10;
+    background:#ffffff;
 
     @media screen and (min-width:1024px) {
         width:50vw;
+        margin:-10vh auto 2rem;
     }
 
     h2,
     h3 {
-        width:100%;
+        width:90%;
+        margin:0 auto;
     }
 
     h2 {
-        margin:4rem 0 4rem;
         padding:2rem 0 2rem;
         border-bottom:thin dashed #6B7280;
         font-size:3rem;
@@ -24,7 +30,7 @@ const Article = styled.article`
     }
     
     h3 {
-        margin:2rem 0 2rem;
+        margin:2rem auto 2rem;
         padding:1rem 0 1rem;
         font-size:2.4rem;
     }
@@ -41,7 +47,8 @@ const Article = styled.article`
     }
 
     p {
-        margin:4rem 0 4rem;
+        width:90%;
+        margin:4rem auto 4rem;
         font-size:1.8rem;
         color:#6B7280;
         line-height:2.6rem;
@@ -56,7 +63,8 @@ const Article = styled.article`
     }
 
     ul, ol {
-        width:100%;
+        width:90%;
+        margin:0 auto;
         padding:1rem 0 1rem;
 
         li {

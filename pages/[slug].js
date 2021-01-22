@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import {Navigation} from '../components/siteNav'
 import {Header} from '../components/sermonHeader'
 import {Sermon} from '../components/sermonBody'
 import {Footer} from '../components/siteFooter'
@@ -18,11 +19,9 @@ export default function Post({ post, morePosts, preview }) {
         ) : (
           <>
           <Head>
-            <title>
-              {post.title} | Sermões de John Wesley
-            </title>
+            <title>{post.title} | Sermões John Wesley</title>
           </Head>
-
+          <Navigation />
           <Header title={post.title} verse={post.verse} date={post.date} />
           <Sermon html={post.content} reference={post.reference} title={post.title} />
           <Footer copyright="Um site do Projeto Bereia"/>
