@@ -32,6 +32,8 @@ export default function Index({ allPosts }) {
     <>
         <Head>
           <title>Sermões de John Wesley | Projeto Bereia</title>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat&display=swap" rel="stylesheet" />
         </Head>
 
         <Navigation />

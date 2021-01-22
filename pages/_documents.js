@@ -4,13 +4,11 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-br">
-        <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat&display=swap" rel="stylesheet" />
-        </Head>
+        <Head/>
         <body>
           <Main />
           <NextScript />
+          <script src="assets/scripts/sharer.min.js"/>
         </body>
       </Html>
     )

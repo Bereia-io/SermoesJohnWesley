@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ShareButtons from './ShareButtons'
 
 const Article = styled.article`
     position:relative;
@@ -74,35 +75,36 @@ const Article = styled.article`
             color:#6B7280;
         }
     }
+`
 
-    footer {
-        margin:4rem 0 0 0;
-        padding:4rem 0 0 0;
-        border-top:thin solid #E5E7EB;
-        font-family:'Montserrat', sans-serif;
+const ArticleFooter = styled.footer`
+    font-family:'Montserrat', sans-serif;
+    font-size:1.4rem;
+
+    @media screen and (min-width:1024px) {
         font-size:1.4rem;
+    }
 
-        @media screen and (min-width:1024px) {
-            margin:6rem 0 0 0;
-            padding:6rem 0 4rem;
-            font-size:1.4rem;
-        }
-
+    section {
+        width:100%;
+        padding:2rem 0 0 0;
+        
         a {
             color:#B91C1C;
         }
     }
-
 `
-
 export function Sermon(props) {
     return(
         <>
         <Article>
             <section dangerouslySetInnerHTML={{__html: props.html}} />
-            <footer>
-                Fonte: <a href={props.reference} title={props.title} target="_blanck">{props.reference}</a>
-            </footer>
+            <ArticleFooter>
+                <section>
+                    Fonte: <a href={props.reference} title={props.title} target="_blanck">{props.reference}</a>
+                </section>
+            </ArticleFooter>
+            <ShareButtons url={props.slug} quote={props.verse} title={props.title}/>
         </Article>
         </>
     )

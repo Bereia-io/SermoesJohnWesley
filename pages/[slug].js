@@ -11,9 +11,7 @@ const { publicRuntimeConfig } = getConfig();
 
 
 export default function Post({ post, morePosts, preview }) {
-  const router = useRouter()
-  const { SITE_URL } = process.env
-  
+  const router = useRouter()  
   const ogImage = `${publicRuntimeConfig.SITE_URL}/api/image-generator?title=${post.title}` + '&' + `number=${post.number}` + '&' +`description=${post.verse}`
 
   if (!router.isFallback && !post?.slug) {
@@ -43,10 +41,14 @@ export default function Post({ post, morePosts, preview }) {
             <meta property="twitter:description" content={post.verse}/>
             <meta property="twitter:image" content={`${ogImage}`}/>
 
+            <link rel="preconnect" href="https://fonts.gstatic.com" />
+            <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat&display=swap" rel="stylesheet" />
+
+            <script src="/assets/scripts/sharer.min.js" />
           </Head>
           <Navigation />
           <Header title={post.title} verse={post.verse} date={post.date} />
-          <Sermon html={post.content} reference={post.reference} title={post.title} />
+          <Sermon html={post.content} reference={post.reference} title={post.title} slug={`${publicRuntimeConfig.SITE_URL}/${post.slug}`}/>
           <Footer copyright="Um site do Projeto Bereia"/>
           </>
         )}
