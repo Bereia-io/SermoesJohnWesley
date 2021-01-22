@@ -16,10 +16,15 @@ const SiteFooter = styled.footer`
         cursor: pointer;
     }
 
-    strong {
+    p {
+        max-width:70vw;
         font-family:'Montserrat', sans-serif;
         font-size:1.2rem;
+        font-weight:600;
+        line-height:1.8rem;
         color:#6B7280;
+        text-align:center;
+        margin:1rem 0 1rem;
     }
 `
 
@@ -36,9 +41,8 @@ export function Footer(props) {
                 />
                 </a>
             </Link>
-            <strong>
-                {props.copyright}
-            </strong>
+                <p>O projeto Sermões de John Wesley é uma iniciativa independente, open source e sem fins lucrativos cujo objetivo é disponibilizar de forma fácil, simples e intuitiva todos os sermões pregados por Wesley.</p>
+                <p><strong>{props.copyright}</strong></p>
         </SiteFooter>
     )
 }
