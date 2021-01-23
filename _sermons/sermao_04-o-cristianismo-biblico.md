@@ -1,7 +1,7 @@
 ---
 title: 'O cristianismo bíblico'
 number: '004'
-verse: '"E todos ficaram cheios do Espírito Santo" (Atosos 4.31)'
+verse: '"E todos ficaram cheios do Espírito Santo" (Atos 4.31)'
 location: 'Pregado na Capela de Santa Maria, Oxford'
 reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download?from=https://sermoesjohnwesley.com.br'
 date: '24 de agosto de 1744'
