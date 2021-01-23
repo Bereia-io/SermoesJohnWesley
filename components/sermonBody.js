@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { FacebookProvider, Comments } from 'react-facebook';
 import styled from 'styled-components'
 import ShareButtons from './ShareButtons'
-import dynamic from 'next/dynamic'
 
 const Article = styled.article`
     position:relative;
