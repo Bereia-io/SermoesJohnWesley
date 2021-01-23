@@ -1,3 +1,4 @@
+import getConfig from "next/config";
 import Head from 'next/head'
 import {Navigation} from '../components/siteNav'
 import {Header} from '../components/siteHeader'
@@ -5,7 +6,6 @@ import {Footer} from '../components/siteFooter'
 import More from '../components/more'
 import { getAllPosts } from '../lib/api'
 import styled from 'styled-components'
-import Analytics from '../components/analytics'
 
 const Feed = styled.main`
   position:relative;
@@ -29,14 +29,32 @@ const Feed = styled.main`
 
 export default function Index({ allPosts }) {
   const morePosts = allPosts
+  const { publicRuntimeConfig } = getConfig();
+  const ogImage = `${publicRuntimeConfig.SITE_URL}/api/image-generator?title=Sermões de John Wesley` + '&' +`description="Ponha fogo no seu sermão ou ponha seu sermão no fogo"`
   return (
     <>
         <Head>
           <title>Sermões de John Wesley | Projeto Bereia</title>
+          
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat&display=swap" rel="stylesheet" />
 
-          <Analytics />
+          <meta name="theme-color" content="#B91C1C" />
+          <meta name="apple-mobile-web-app-status-bar-style" content="#B91C1C" />
+
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content={`https://sermoesjohnwesley.com.br/`}/>
+          <meta property="og:title" content={`Sermões de John Wesley | Projeto Bereia`}/>
+          <meta property="og:description" content='"Ponha fogo no seu sermão ou ponha seu sermão no fogo" | Leia todos os sermões de John Wesley'/>
+          <meta property="og:image" content={`${ogImage}`}/>
+
+          <meta property="twitter:card" content="summary_large_image"/>
+          <meta property="twitter:url" content={`https://sermoesjohnwesley.com.br/`}/>
+          <meta property="twitter:title" content={`Sermões de John Wesley | Projeto Bereia`}/>
+          <meta property="twitter:description" content='"Ponha fogo no seu sermão ou ponha seu sermão no fogo" | Leia todos os sermões de John Wesley'/>
+          <meta property="twitter:image" content={`${ogImage}`}/>
+          
+          {/* <Analytics /> */}
         </Head>
 
         <Navigation />
