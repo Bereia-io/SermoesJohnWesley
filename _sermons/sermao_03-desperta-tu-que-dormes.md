@@ -3,7 +3,7 @@ title: 'Desperta tu que dormes'
 number: '003'
 verse: '"Desperta, tu que dormes, e levanta-te dentre os mortos, e Cristo te alumiará" (Efésios 5.14)'
 location: 'Diante da Universidade Oxford'
-reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download'
+reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download/?from=https://sermoesjohnwesley.com.br'
 date: '4 de abril de 1742'
 image: '/images/header.webp'
 ---
