@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
+import Headroom from 'react-headroom'
 
 const SiteNav = styled.nav`
-    position:fixed;
-    top:0;
-    left:0;
     width:100vw;
     height:12vh;
     display:flex;
@@ -13,7 +11,6 @@ const SiteNav = styled.nav`
     align-items:center;
     box-shadow:0 0 6px rgba(0,0,0,.2);
     background:#ffffff;
-    z-index:900;
 
     a {
         cursor: pointer;
@@ -22,17 +19,24 @@ const SiteNav = styled.nav`
 
 export function Navigation() {
     return (
-        <SiteNav>
-            <Link href="/">
-                <a>
-                <Image
-                    src="/assets/logos/site-logo_v1.svg"
-                    alt="Sermões John Wesley"
-                    width={150}
-                    height={50}
-                />
-                </a>
-            </Link>
-        </SiteNav>
+        <Headroom
+            style={{
+                transition: 'all .25s ease-in-out',
+                zIndex:'900'
+            }}
+        >
+            <SiteNav id="navigation">
+                <Link href="/">
+                    <a>
+                    <Image
+                        src="/assets/logos/site-logo_v1.svg"
+                        alt="Sermões John Wesley"
+                        width={150}
+                        height={50}
+                    />
+                    </a>
+                </Link>
+            </SiteNav>
+        </Headroom>
     )
 }
