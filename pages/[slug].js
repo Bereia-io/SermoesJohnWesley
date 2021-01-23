@@ -5,15 +5,12 @@ import {Header} from '../components/sermonHeader'
 import {Sermon} from '../components/sermonBody'
 import {Footer} from '../components/siteFooter'
 import { getPostBySlug, getAllPosts } from '../lib/api'
-import Analytics from '../components/analytics'
 import Head from 'next/head'
 import markdownToHtml from '../lib/markdownToHtml'
 
-const { publicRuntimeConfig } = getConfig();
-const env = publicRuntimeConfig.ENV
-
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()  
+  const { publicRuntimeConfig } = getConfig()
   const ogImage = `${publicRuntimeConfig.SITE_URL}/api/image-generator?title=${post.title}` + '&' + `number=${post.number}` + '&' +`description=${post.verse}`
 
   if (!router.isFallback && !post?.slug) {
@@ -27,6 +24,9 @@ export default function Post({ post, morePosts, preview }) {
           <>
           <Head>
             <title>{post.title} | Sermões John Wesley</title>
+
+            <meta name="theme-color" content="#B91C1C" />
+            <meta name="apple-mobile-web-app-status-bar-style" content="#B91C1C" />
 
             <meta name="title" content={`${post.title} | Sermões John Wesley`}/>
             <meta name="description" content={post.verse}/>
@@ -50,7 +50,7 @@ export default function Post({ post, morePosts, preview }) {
 
             <script src="/assets/scripts/sharer.min.js" />
 
-            <Analytics />
+            {/* <Analytics /> */}
 
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0&appId=172182567581276&autoLogAppEvents=1" nonce="kqNuzsRX"></script>
