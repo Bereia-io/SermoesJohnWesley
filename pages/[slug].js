@@ -5,14 +5,17 @@ import {Header} from '../components/sermonHeader'
 import {Sermon} from '../components/sermonBody'
 import {Footer} from '../components/siteFooter'
 import { getPostBySlug, getAllPosts } from '../lib/api'
+import Analytics from '../components/analytics'
 import Head from 'next/head'
 import markdownToHtml from '../lib/markdownToHtml'
-const { publicRuntimeConfig } = getConfig();
 
+const { publicRuntimeConfig } = getConfig();
+const env = publicRuntimeConfig.ENV
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()  
   const ogImage = `${publicRuntimeConfig.SITE_URL}/api/image-generator?title=${post.title}` + '&' + `number=${post.number}` + '&' +`description=${post.verse}`
+  console.log(env)
 
   if (!router.isFallback && !post?.slug) {
     return <p>Não encontrado</p>
@@ -47,8 +50,11 @@ export default function Post({ post, morePosts, preview }) {
             <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat&display=swap" rel="stylesheet" />
 
             <script src="/assets/scripts/sharer.min.js" />
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCLENHTT0N"></script>
-            <script src="/assets/scripts/googleanalytics.js"/>
+
+            <Analytics />
+            
+            {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCLENHTT0N"></script>
+            <script src="/assets/scripts/googleanalytics.js"/> */}
 
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0&appId=172182567581276&autoLogAppEvents=1" nonce="kqNuzsRX"></script>
