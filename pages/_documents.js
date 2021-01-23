@@ -8,7 +8,6 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="assets/scripts/sharer.min.js"/>
         </body>
       </Html>
     )
