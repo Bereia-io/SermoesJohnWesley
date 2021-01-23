@@ -95,7 +95,7 @@ export function Header(props) {
             
             <Image
                 src="/assets/images/header.webp"
-                alt="Picture of the author"
+                alt="John Wesley"
                 layout="fill"
                 objectFit="cover"
             />
