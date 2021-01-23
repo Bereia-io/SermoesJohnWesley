@@ -3,7 +3,7 @@ title: 'O cristianismo bíblico'
 number: '004'
 verse: '"E todos ficaram cheios do Espírito Santo" (Atos 4.31)'
 location: 'Pregado na Capela de Santa Maria, Oxford'
-reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download?from=https://sermoesjohnwesley.com.br'
+reference: 'https://www.metodista.org.br/sermoes-de-john-wesley-disponiveis-para-download/?from=https://sermoesjohnwesley.com.br'
 date: '24 de agosto de 1744'
 image: '/images/header.webp'
 ---
@@ -24,7 +24,7 @@ Sumário histórico do dia de Pentecoste. Os dons extraordinários e ordinários
 
 **1.** A mesma expressão ocorre-no segundo capítulo, onde lemos: *“Ao cumprir-se o dia de Pentecoste, estavam todos (os apóstolos, com as mulheres, a mãe de Jesus e seus irmãos), reunidos no mesmo lugar. E subitamente veio do céu um ruído, como de um vento impetuoso. E apareceram junto deles umas como línguas de fogo, as quais se distribuíram para repousar sobre cada um deles. E todos ficaram cheios do Espírito Santo”*. 
 
-O imediato efeito disto foi que “começaram a falar em outras línguas”, de modo que partos, medas, elamitas e outros estrangeiros, que *“se reuniram quando se produziu o rumor, ouviram-nos contar, em suas diversas línguas, as obras maravilhosas de Deus”* (Atos 2.1-6).
+O imediato efeito disto foi que *“começaram a falar em outras línguas”*, de modo que partos, medas, elamitas e outros estrangeiros, que *“se reuniram quando se produziu o rumor, ouviram-nos contar, em suas diversas línguas, as obras maravilhosas de Deus”* (Atos 2.1-6).
 
 **2.** Neste capítulo lemos que, estando os apóstolos e irmãos orando e louvando a Deus, *“tremeu o lugar em que se achavam congrega dos e todos ficaram cheios do Espírito Santo”*. Não encontramos aqui nenhuma aparência visível, tal como havia acontecido na passagem anterior, nem temos informação de que os dons extraordinários do Espírito Santo tivessem sido então comunicados a todos ou a alguns dentre eles, como os dons de “curar, de operar” outros *“milagres, de profecia, de discernimento”* de espíritos, de falar diversas línguas e de as interpretar” (1 Coríntios 7.9, 10).
 
