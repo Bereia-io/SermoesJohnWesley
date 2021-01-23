@@ -7,7 +7,6 @@ module.exports = {
     if (isServer) {
       require('./lib/sitemapGenerator')
     }
-
     return config
   },
 };
