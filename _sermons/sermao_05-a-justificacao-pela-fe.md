@@ -28,7 +28,7 @@ Como pode o pecador ser justificado diante de Deus? Importância desta questão 
 
 **3.** Para fazer justiça, pelo que me toca, à vasta importância do assunto; para salvar os que sinceramente buscam a verdade da “vã disputa e contenda de palavras”; para esclarecer a confusão de pensamento em que tantos se têm abismado, em razão da discórdia existente, e para lhes dar verdadeiras e justas concepções acerca desse grande mistério de piedade, empreendo mostrar: Primeiro qual é o fundamento geral de toda a doutrina da justificação; Segundo o que é a justificação; Terceiro quais são os justificados; e Quarto, em que termos são eles justificados. 
 
-## I 
+### I
 
 Quero mostrar, primeiro, qual é o fundamento geral de toda a doutrina da justificação. 
 
@@ -52,7 +52,7 @@ Como tal “levou nossas dores”, *“tendo o Senhor feito cair sobre ele as in
 
 **9.** Este é, pois, o fundamento geral de toda a doutrina da justificação. Pelo pecado do primeiro Adão, que não somente era o pai, mas também o representante de todos nós, decaímos da graça; tornamo-nos todos filhos da ira, ou, na expressão do apóstolo, *“o juízo veio sobre todos os homens para a condenação”.* Da mesma forma, mediante o sacrifício pelo pecado, feito pelo segundo Adão, como nosso representante, Deus tão perfeitamente se reconciliou com todo o mundo, que com ele fez um novo pacto, de modo que, uma vez preenchida a simples condição imposta, *“não há mais condenação”* para nós, mas *“somos justificados livremente pela sua graça, mediante a redenção que há em Cristo Jesus”*. 
 
-## II 
+### II
 
 **1.** Mas, que é ser justificado? Que é justificação? Este é o segundo ponto que me proponho ventilar. Das observações que precederam, é evidente que a justificação não consiste em ser o homem desde agora transformado em justo. Isto é santificação, que por sua vez vem a ser na verdade, em alguma medida, o fruto imediato da justificação, sem deixar de ser, não obstante, outro dom de Deus, de natureza totalmente diversa. Um implica no que Deus faz por nós através de seu Filho; o outro se prende ao que o mesmo Deus opera em nós pelo seu Espírito. Embora haja algumas passagens raras em que o termo justificado ou justificação seja usado em sentido demasiadamente amplo para também incluir a santificação, todavia, no uso corrente, essas doutrinas se apresentam suficientemente discriminadas, tanto nos escritos de S.Paulo como nos de outros autores inspirados. 
 
@@ -72,7 +72,7 @@ Deus não o condenará por aquela razão, nem neste mundo, nem no mundo vindouro
 
 Parece que, na verdade, o apóstolo estende, em algumas passagens, a significação da palavra, dizendo, por exemplo: *“Não os ouvintes da lei, mas os obradores da lei, serão justificados”*. Aí parece que ele relaciona nossa justificação com a sentença do grande Dia. E isso também faz, inquestionavelmente, o próprio Senhor nosso, quando diz: *“Por tuas palavras serás Justificados”*, provando com isto que *“de toda palavra ociosa que os homens disserem, darão contas no dia de Juízo”*; mas dificilmente encontraremos outra passagem de S. Paulo em que a palavra figure nesse sentido amplíssimo. É evidente que tal conceito não ressalta do teor geral de seus escritos, e menos ainda isto se dá no. texto que temos diante de nós, que evidentemente fala, não dos que já “terminaram sua carreira”, mas dos que a iniciam agora, dos que começam a “correr a carreira que lhes está proposta”. 
 
-## III 
+### III
 
 **1.** Este é, entretanto, o terceiro ponto a ser considerado isto é: Quais são os justificados? E o apóstolo expressamente responde: o ímpio: “Ele (Deus) justifica o ímpio”, o ímpio de toda espécie e categoria; e ninguém, senão o ímpio. Como “os justos não precisam de arrependimento”, assim não tem necessidade de perdão. Somente aos pecadores cabe o perdão; só o pecado admite o ser perdoado. O perdão tem, pois, imediata relação com o pecado, e, neste sentido, nenhuma outra relação existe. É para com nossa injustiça que o Deus perdoador é misericordioso; é de nossa iniquidade que Ele, “não se lembra mais”. 
 
@@ -90,7 +90,7 @@ Porque não é o santo, mas o pecador, que é perdoado, e perdoado na sua qualid
 
 A primeira proposição é evidente por si mesma e a segunda — que obra alguma, feita antes da justificação, faz-se como Deus quer e ordena que seja feita, resultará igualmente clara e inegável, se bem considerarmos o assunto. Deus deseja e. manda que todas as nossas obras sejam feitas em caridade (εναγαπη) em amor, naquele amor de Deus que produz amor a toda a humanidade. Mas nenhuma de nossas obras pode ser feita nesse amor, enquanto o amor do Pai (de Deus, como nosso Pai), não estiver em nós; e este amor não pode existir em nós até que recebamos o “Espírito de adoção, clamando em nossos corações: Abba, Pai!” Se Deus, pois, não 1ustifica o ímpio e o, que, (neste sentido), não produz obras; então Cristo morreu em vão e, não obstante sua morte, nenhuma carne será justificada. 
 
-## IV 
+### IV
 
 **1.** Mas, em que termos é então justificado aquele que, além de ímpio, não possuía obras até o tempo da justificação? Sob uma só condição, que é a fé: que ele creia “no que justifica o ímpio”. E “aquele que crê não é condenado”, pois que *“passou da morte para a vida”*. *“Porque a justiça (ou misericórdia), de Deus é, pela fé em Jesus Cristo, para todos e sobre todos os que creem: ao qual Deus enviou como propiciação, mediante a fé em seu sangue, para que Ele possa ser justo e (consistentemente com sua justiça), Justificador daquele que crê em Jesus.”* “Disto concluímos que o homem é justificado pela fé, sem as obras da lei”, sem prévia obediência à lei moral, que ele, na verdade, até agora não pôde cumprir. Que seja à lei moral, e somente esta, a que é ali mencionada, resulta evidente das palavras que se seguem: “Porventura invalidamos a lei por causa da fé? De modo nenhum. Antes, estabelecemos a lei”. Que espécie de lei podemos estabelecer pela fé? Não será a lei ritual, nem a lei cerimonial de Moisés, mas a, grande, imutável lei do amor, o santo amor de Deus e de nosso próximo. 
 
